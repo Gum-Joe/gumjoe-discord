@@ -1,0 +1,33 @@
+{
+  "name": "gumjoe-discord",
+  "version": "0.1.0",
+  "description": "Gum Joe Pub Discord Bot",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gum-Joe/gumjoe-discord.git"
+  },
+  "keywords": [
+    "bot",
+    "chat",
+    "quiz",
+    "gum",
+    "joe",
+    "pub"
+  ],
+  "author": "Gum-Joe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Gum-Joe/gumjoe-discord/issues"
+  },
+  "homepage": "https://github.com/Gum-Joe/gumjoe-discord#readme",
+  "devDependencies": {
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "discord.js": "^11.3.2"
+  }
+}
