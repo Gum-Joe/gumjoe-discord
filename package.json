@@ -4,7 +4,8 @@
   "description": "Gum Joe Pub Discord Bot",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "start": "node lib/index.js"
   },
   "repository": {
     "type": "git",

@@ -57,3 +57,8 @@ typings/
 # dotenv environment variables file
 .env
 
+# Lib
+lib/
+
+# PRIVATE files
+private/

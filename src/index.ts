@@ -2,7 +2,9 @@
  * Entry point of the discord bot
  */
 import * as Discord from "discord.js";
+import quiz from "./commands/quiz";
 import { QUIZ_COMMAND } from "./constants";
+import * as config from "../private/config";
 
 // Init
 const client: Discord.Client = new Discord.Client();
@@ -13,14 +15,16 @@ client.on("ready", () => {
 
 client.on("message", msg => {
   // Detect that we are needed
-  const command: String[] = msg.content.split(" ");
+  const command: string[] = msg.content.split(" ");
   if (command[0] === "/gumjoe") {
+    console.log("Got a command: " + command[1]);
+    const subcommand: string[] = Array.prototype.concat(command);
+    subcommand.splice(0, 2);
     switch (command[1]) {
       case QUIZ_COMMAND:
-        msg.channel.send("Hi! I am the Gum Joe Bot!");
-        msg.channel.send("I am still in active development, but expect new features soon");
+        quiz(msg, subcommand);
     }
   }
 });
 
-client.login("");
+client.login(config.token);
