@@ -23,6 +23,10 @@ client.on("message", msg => {
     switch (command[1]) {
       case QUIZ_COMMAND:
         quiz(msg, subcommand);
+        break;
+      case "get":
+        console.log(msg);
+        break;
     }
   }
 });
